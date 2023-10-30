@@ -7,7 +7,7 @@ let evaluate=document.getElementById("e");
 buttons.forEach((button) => {
 button.addEventListener('keyup', function (e){
     e.preventDefault();
-    if(e.target.key === key.target.match(/[0-9]\d/)) {
+    if(e.key === key.match(/[0-9]\d/)) {
         try{
             resultscreen.value += e.target.value;
             
@@ -25,7 +25,7 @@ operations.forEach((button1)=> {
     button1.addEventListener('click',function(e){
         let operators=e.target.value;
         resultscreen.value +=operators;
-       console.log(operators)
+    //    console.log(operators)
    
     })
 })
