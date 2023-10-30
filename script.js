@@ -10,7 +10,7 @@ button.addEventListener('keyup', function (e){
     if(e.target.key === key.target.match(/[0-9]\d/)) {
         try{
             resultscreen.value += e.target.value;
-            console.log(resultscreen.value);
+            
         }  
     catch(err){
         alert("Only Numbers are Allowed.");
